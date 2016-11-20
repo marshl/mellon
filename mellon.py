@@ -19,5 +19,15 @@ words = [word for word in words if len(re.findall('[^aeiouy]*[aeiouy]+[^aeiouy]*
 # Pick X words at random
 words = [rnd.choice(words).rstrip() for i in range(word_count)]
 
+# for line in words_file:
+    # line = line.rstrip()
+    # if len(re.findall('[^aeiouy]*[aeiouy]+[^aeiouy]*', line)) <= 2 \
+        # and len(re.findall('[^a-z]', line)) == 0:
+        # for i in range(len(words)):
+            # if rnd.randint(0, line_count) == 0:
+                # words[i] = line
+
+        # line_count += 1
+    
 print(words)
 words_file.close()
